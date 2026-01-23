@@ -1,10 +1,32 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
-    <header style={{ textAlign: "center", padding: "40px" }}>
-      <h1>Julien Fabrice Menoa Ondobo</h1>
-      <h2>Développeur Frontend React</h2>
-      <p>Je crais des applications web modernes et performantes.</p>
-    </header>
+    <nav
+      style={{
+        padding: "20px",
+        backgroundColor: "#222",
+        display: "flex",
+        gap: "20px",
+      }}
+    >
+      <Link style={{ color: "#fff", textDecoration: "none" }} to="/">
+        À propos
+      </Link>
+
+      <Link style={{ color: "#fff", textDecoration: "none" }} to="/projects">
+        Projets
+      </Link>
+
+      <Link style={{ color: "#fff", textDecoration: "none" }} to="/skills">
+        Compétences
+      </Link>
+
+      <Link style={{ color: "#fff", textDecoration: "none" }} to="/contact">
+        Contact
+      </Link>
+    </nav>
   );
 }
 

@@ -1,16 +1,29 @@
+import React from "react";
+
 function Skills() {
+  const skills = [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React.js",
+    "Maintenance informatique",
+    "Installation de systèmes (Windows, Linux)",
+    "Dépannage matériel et logiciel",
+    "Git & GitHub",
+  ];
+
   return (
-    <section style={{ padding: "30px" }}>
-      <h3>Compétences</h3>
+    <div className="container">
+      <h1>Mes Compétences</h1>
+
       <ul>
-        <li>HTML5 / CSS3</li>
-        <li>JavaScript</li>
-        <li>React JS</li>
-        <li>Git & GitHub</li>
-        <li>WordPress</li>
-        <li>Maintenance informatique</li>
+        {skills.map((skill, index) => (
+          <li key={index} style={{ marginBottom: "10px" }}>
+            {skill}
+          </li>
+        ))}
       </ul>
-    </section>
+    </div>
   );
 }
 

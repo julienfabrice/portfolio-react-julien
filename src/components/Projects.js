@@ -1,24 +1,55 @@
+import React from "react";
+
 function Projects() {
+  const projects = [
+    {
+      title: "Portfolio React",
+      description: "Portfolio personnel développé avec React.",
+      github: "https://github.com/julienfabrice/portfolio-react-julien",
+    },
+    {
+      title: "BilmaFood",
+      description: "Application web de commande de nourriture.",
+      github: "https://github.com/julienfabrice/Bilmafood",
+    },
+  ];
+
   return (
-    <section style={{ padding: "30px" }}>
-      <h3>Projets</h3>
+    <div style={{ padding: "40px" }}>
+      <h1>Mes Projets</h1>
 
-      <div>
-        <h4>Portfolio personnel</h4>
-        <p>Site portfolio développé avec React JS.</p>
-      </div>
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          style={{
+            border: "1px solid #ddd",
+            padding: "20px",
+            marginBottom: "20px",
+            borderRadius: "8px",
+          }}
+        >
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+        <a
+  href={project.github}
+  target="_blank"
+  rel="noreferrer"
+  style={{
+    display: "inline-block",
+    marginTop: "10px",
+    color: "#0f172a",
+    fontWeight: "600",
+  }}
+>
+  🔗 Voir sur GitHub
+</a>
 
-      <div>
-        <h4>Application de gestion de tâches</h4>
-        <p>Application CRUD en React (ajout, modification, suppression).</p>
-      </div>
 
-      <div>
-        <h4>Application de prise de rendez-vous</h4>
-        <p>Application React pour la gestion de rendez-vous.</p>
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
   );
 }
+
 
 export default Projects;
