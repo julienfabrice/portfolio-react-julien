@@ -1,55 +1,30 @@
-import React from "react";
+import ProjectCard from "./ProjectCard";
+import "../styles/projects.css";
 
-function Projects() {
-  const projects = [
-    {
-      title: "Portfolio React",
-      description: "Portfolio personnel développé avec React.",
-      github: "https://github.com/julienfabrice/portfolio-react-julien",
-    },
-    {
-      title: "BilmaFood",
-      description: "Application web de commande de nourriture.",
-      github: "https://github.com/julienfabrice/Bilmafood",
-    },
-  ];
-
+const Projects = () => {
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>Mes Projets</h1>
+    <section className="projects-section" id="projects">
+      <h2>Mes Projets</h2>
 
-      {projects.map((project, index) => (
-        <div
-          key={index}
-          style={{
-            border: "1px solid #ddd",
-            padding: "20px",
-            marginBottom: "20px",
-            borderRadius: "8px",
-          }}
-        >
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-        <a
-  href={project.github}
-  target="_blank"
-  rel="noreferrer"
-  style={{
-    display: "inline-block",
-    marginTop: "10px",
-    color: "#0f172a",
-    fontWeight: "600",
-  }}
->
-  🔗 Voir sur GitHub
-</a>
+      <div className="projects-grid">
+        <ProjectCard
+          title="Job Board React"
+          description="Job board moderne avec React Router, pages dynamiques et Dark Mode."
+          tech="React, React Router, CSS"
+          github="https://github.com/julienfabrice Portfolio"
+          live="https://cute-faun-069892.netlify.app"
+        />
 
-
-        </div>
-      ))}
-    </div>
+        <ProjectCard
+          title="Portfolio React"
+          description="Portfolio personnel pour présenter mes projets et compétences."
+          tech="React, CSS"
+          github="https://github.com/julienfabrice Portfolio"
+          live="https://cute-faun-069892.netlify.app"
+        />
+      </div>
+    </section>
   );
-}
-
+};
 
 export default Projects;
