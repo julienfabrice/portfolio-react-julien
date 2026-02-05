@@ -1,0 +1,102 @@
+/* Ajout keyframes pour fade-in et slide-up */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO WRAPPER */
+.hero {
+  background: linear-gradient(135deg, #f0f6ff 0%, #e6efff 50%, #f8fbff 100%);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* CARTE HERO */
+.hero-card {
+  max-width: 750px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  /* Animation pour tout le contenu */
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* GRAND TITRE */
+.hero-card h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* PARAGRAPHES */
+.hero-card p {
+  font-size: 1.1rem;
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* Définir un délai progressif pour chaque paragraphe */
+.hero-card p:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+
+.hero-card p:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+
+.hero-card p:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+
+/* BOUTON BLEU */
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.hero-btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 30px 20px;
+  }
+
+  .hero-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-card p {
+    font-size: 1rem;
+  }
+}

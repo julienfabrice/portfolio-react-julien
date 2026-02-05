@@ -11,7 +11,7 @@ const Projects = () => {
           title="Job Board React"
           description="Job board moderne avec React Router, pages dynamiques et Dark Mode."
           tech="React, React Router, CSS"
-          github="https://github.com/julienfabrice Portfolio"
+          github="https://github.com/julienfabrice/react-job-board"
           live="https://cute-faun-069892.netlify.app"
         />
 
@@ -19,11 +19,12 @@ const Projects = () => {
           title="Portfolio React"
           description="Portfolio personnel pour présenter mes projets et compétences."
           tech="React, CSS"
-          github="https://github.com/julienfabrice Portfolio"
+          github="https://github.com/julienfabrice/react-job-board"
           live="https://cute-faun-069892.netlify.app"
         />
       </div>
     </section>
+
   );
 };
 

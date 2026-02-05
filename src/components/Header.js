@@ -1,33 +1,41 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Header.css";
 
-function Header() {
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav
-      style={{
-        padding: "20px",
-        backgroundColor: "#222",
-        display: "flex",
-        gap: "20px",
-      }}
-    >
-      <Link style={{ color: "#fff", textDecoration: "none" }} to="/">
-        À propos
-      </Link>
+    <nav className="navbar">
+      <div className="logo">Julien</div>
 
-      <Link style={{ color: "#fff", textDecoration: "none" }} to="/projects">
-        Projets
-      </Link>
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <NavLink to="/" end onClick={() => setIsOpen(false)}>
+          À propos
+        </NavLink>
 
-      <Link style={{ color: "#fff", textDecoration: "none" }} to="/skills">
-        Compétences
-      </Link>
+        <NavLink to="/projects" onClick={() => setIsOpen(false)}>
+          Projets
+        </NavLink>
 
-      <Link style={{ color: "#fff", textDecoration: "none" }} to="/contact">
-        Contact
-      </Link>
+        <NavLink to="/skills" onClick={() => setIsOpen(false)}>
+          Compétences
+        </NavLink>
+
+        <NavLink to="/contact" onClick={() => setIsOpen(false)}>
+          Contact
+        </NavLink>
+      </div>
+
+      {/* Burger menu */}
+      <div
+        className={`burger ${isOpen ? "toggle" : ""}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
     </nav>
   );
 }
-
-export default Header;
