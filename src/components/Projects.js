@@ -12,7 +12,7 @@ const Projects = () => {
           description="Job board moderne avec React Router, pages dynamiques et Dark Mode."
           tech="React, React Router, CSS"
           github="https://github.com/julienfabrice/react-job-board"
-          live="https://cute-faun-069892.netlify.app"
+          live="https://rad-kheer-765d0e.netlify.app"
         />
 
         <ProjectCard
@@ -24,7 +24,6 @@ const Projects = () => {
         />
       </div>
     </section>
-
   );
 };
 
