@@ -1,4 +1,5 @@
 import React from "react";
+import "./Skills.css"; // CSS dédié à cette page
 
 function Skills() {
   const skills = [
@@ -6,6 +7,7 @@ function Skills() {
     "CSS3",
     "JavaScript",
     "React.js",
+    "TailWind",
     "Maintenance informatique",
     "Installation de systèmes (Windows, Linux)",
     "Dépannage matériel et logiciel",
@@ -13,16 +15,17 @@ function Skills() {
   ];
 
   return (
-    <div className="container">
-      <h1>Mes Compétences</h1>
-
-      <ul>
-        {skills.map((skill, index) => (
-          <li key={index} style={{ marginBottom: "10px" }}>
-            {skill}
-          </li>
-        ))}
-      </ul>
+    <div className="skills-page">
+      <div className="skills-card">
+        <h1 className="skills-title">Mes Compétences</h1>
+        <ul className="skills-list">
+          {skills.map((skill, index) => (
+            <li key={index} className="skill-item">
+              <span className="bullet">•</span> {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

@@ -4,23 +4,21 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-
+import TodoPage from "./components/TodoPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-          {/* SECTION PROJECTS */}
         <Route path="/" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/todo" element={<TodoPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-
-

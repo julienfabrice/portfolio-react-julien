@@ -1,0 +1,60 @@
+/* Fond uniforme sur toutes les pages */
+.skills-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f2fe, #e9d5ff, #f0f9ff);
+  padding: 2rem;
+}
+
+/* Carte des compétences */
+.skills-card {
+  background: white;
+  padding: 2.5rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Titre */
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 2rem;
+}
+
+/* Liste des compétences */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem 2rem;
+}
+
+/* Élément individuel */
+.skill-item {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.skill-item:hover {
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Bullet stylé */
+.bullet {
+  color: #2563eb;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}

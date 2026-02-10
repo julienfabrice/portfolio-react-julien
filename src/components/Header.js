@@ -17,7 +17,10 @@ export default function Header() {
         <NavLink to="/projects" onClick={() => setIsOpen(false)}>
           Projets
         </NavLink>
-
+         {/* Nouveau lien pour TodoApp */}
+        <NavLink to="/todo" onClick={() => setIsOpen(false)}>
+          Todo App
+        </NavLink>
         <NavLink to="/skills" onClick={() => setIsOpen(false)}>
           Compétences
         </NavLink>

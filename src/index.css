@@ -1,3 +1,10 @@
+/* Fond d'écran global pour tout le portfolio */
+body, html, #root {
+  min-height: 100vh;
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #e9d5ff, #f0f9ff);
+}
 :root {
   --color-primary: #0F172A;
   --color-secondary: #38BDF8;
@@ -60,14 +67,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-}
-
 h1, h2, h3 {
   color: white;
   font-weight: 700;

@@ -1,0 +1,174 @@
+/* Conteneur principal */
+.todo-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f2fe, #e9d5ff, #f0f9ff);
+  padding: 2rem;
+}
+
+/* Carte TodoApp */
+.todo-card {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Bouton retour */
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Titre */
+.todo-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 2rem;
+}
+
+/* Formulaire */
+.todo-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background-color: #1e40af;
+}
+
+/* Filtres */
+.todo-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e5e7eb;
+}
+
+.todo-filter-btn.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.todo-filter-btn span {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+/* Liste des tâches */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Tâche individuelle */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Boutons tâche */
+.todo-item button {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-item button.edit {
+  background-color: #facc15;
+  color: #1f2937;
+}
+
+.todo-item button.edit:hover {
+  background-color: #eab308;
+}
+
+.todo-item button.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.todo-item button.delete:hover {
+  background-color: #b91c1c;
+}
+
+.todo-item button.save {
+  background-color: #22c55e;
+  color: white;
+}
+
+.todo-item button.save:hover {
+  background-color: #16a34a;
+}
+
+.todo-item input {
+  flex: 1;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}

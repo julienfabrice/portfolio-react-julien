@@ -8,7 +8,7 @@ function Hero() {
         {/* GRAND TITRE */}
         <h1>Je suis développeur React</h1>
 
-        {/* TROIS PARAGRAPHES */}
+        {/* PARAGRAPHES */}
         <p>
           Je suis développeur d’applications et technicien en maintenance
           informatique, titulaire d’une licence en informatique. Passionné par
@@ -32,7 +32,7 @@ function Hero() {
         </p>
 
         {/* BOUTON BLEU CENTRÉ */}
-        <Link to="/projects" className="hero-btn">
+        <Link to="/projects" className="button hero-btn">
           Voir mes projets
         </Link>
       </div>
