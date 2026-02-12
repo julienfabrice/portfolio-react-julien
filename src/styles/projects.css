@@ -14,7 +14,7 @@
 .projects-page h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #0073b1; /* bleu LinkedIn */
   text-align: center;
   margin-bottom: 0.8rem;
 }
@@ -59,7 +59,7 @@
 .project-card h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #2563eb;
+  color:#0073b1; /* bleu LinkedIn */
   margin-bottom: 0.5rem;
 }
 
@@ -86,7 +86,7 @@
   border-radius: 0.5rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #2563eb;
+  color: #0073b1; /* bleu LinkedIn */
 }
 
 /* Liens */
@@ -115,12 +115,12 @@
 }
 
 .btn-live {
-  background-color: #2563eb;
+  background-color: #0073b1; /* bleu LinkedIn */
   color: white;
 }
 
 .btn-live:hover {
-  background-color: #1e40af;
+  background-color: #0073b1; /* bleu LinkedIn */
   transform: translateY(-2px);
 }
 

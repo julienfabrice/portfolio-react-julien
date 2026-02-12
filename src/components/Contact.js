@@ -1,51 +1,80 @@
-import React from "react";
-import "../styles/contact.css"; // fichier CSS dédié
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
-function Contact() {
+export default function Contact() {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [messageStatus, setMessageStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessageStatus("");
+
+    emailjs
+      .sendForm(
+        "service_cdjjy7n",   // Remplace par ton Service ID EmailJS
+        "template_4oy77mm",  // Remplace par ton Template ID EmailJS
+        form.current,
+        "rVGFvaKp-PX4mC6Pk"    // Remplace par ta Public Key EmailJS
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          setMessageStatus("Votre message a été envoyé avec succès !");
+          form.current.reset();
+        },
+        (error) => {
+          setLoading(false);
+          setMessageStatus(
+            "Une erreur est survenue. Veuillez réessayer plus tard."
+          );
+          console.error(error.text);
+        }
+      );
+  };
+
   return (
-    <section className="contact-page">
-      <div className="page-container contact-card">
-        <h1>Contact</h1>
+    <div className="contact-page">
+      <h1>Contactez-moi</h1>
+      <p>Remplissez le formulaire ci-dessous pour m’envoyer un message</p>
 
-        <p>
-          Vous pouvez me contacter via les moyens suivants :
-        </p>
+      <div className="contact-container">
+        {/* Formulaire */}
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <label>
+            Nom
+            <input type="text" name="from_name" required />
+          </label>
 
-        <ul>
-          <li>
-            📧 Email :{" "}
-            <a href="mailto:julienfabrice@gmail.com" className="contact-link">
-              menoa.julien@gmail.com
-            </a>
-          </li>
+          <label>
+            Email
+            <input type="email" name="from_email" required />
+          </label>
 
-          <li>
-            💻 GitHub :{" "}
-            <a
-              href="https://github.com/julienfabrice"
-              target="_blank"
-              rel="noreferrer"
-              className="contact-link"
-            >
-              https://github.com/julienfabrice
-            </a>
-          </li>
+          <label>
+            Message
+            <textarea name="message" required />
+          </label>
 
-          <li>
-            📄 CV :{" "}
-            <a
-              href="/CV Julien Fabrice Menoa Ondobo.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="contact-link"
-            >
-              Télécharger mon CV
-            </a>
-          </li>
-        </ul>
+          <button type="submit" disabled={loading}>
+            {loading ? "Envoi..." : "Envoyer"}
+          </button>
+
+          {messageStatus && <p className="status-message">{messageStatus}</p>}
+        </form>
+
+        {/* Infos directes */}
+        <div className="contact-info">
+          <h3>Mes coordonnées</h3>
+          <p><strong>Nom :</strong> Julien Fabrice Menoa</p>
+          <p><strong>Titre :</strong> Développeur React</p>
+          <p><strong>Telephone :</strong> +237 697733236</p>
+          <p><strong>Email :</strong> <a href="mailto:julien@example.com">menoa.julien@gmail.com</a></p>
+          <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/julien-fabrice-menoa-4a1571349" target="_blank" rel="noreferrer">linkedin.com/Julien Fabrice Menoa</a></p>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
-
-export default Contact;

@@ -1,13 +1,21 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import logo from "../assets/logo_julien.png";
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <div className="logo">Julien</div>
+      <NavLink to="/" className="logo">
+  <img src={logo} alt="JFM Logo" />
+
+  <span className="logo-name">
+    Julien Fabrice Menoa
+  </span>
+</NavLink>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <NavLink to="/" end onClick={() => setIsOpen(false)}>
@@ -17,7 +25,7 @@ export default function Header() {
         <NavLink to="/projects" onClick={() => setIsOpen(false)}>
           Projets
         </NavLink>
-         {/* Nouveau lien pour TodoApp */}
+        {/* Nouveau lien pour TodoApp */}
         <NavLink to="/todo" onClick={() => setIsOpen(false)}>
           Todo App
         </NavLink>
