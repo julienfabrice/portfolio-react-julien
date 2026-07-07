@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="page-container projects-page">
       <h1>Mes Projets</h1>
       <p className="projects-intro">
-        Quelques projets réalisés avec React pour pratiquer des applications modernes et dynamiques.
+        Une sélection de projets illustrant mon travail en développement web full-stack : interfaces React modernes, applications Node.js/Express connectées à des bases de données, et outils sur mesure pour des besoins concrets.
       </p>
 
       <div className="projects-grid">
@@ -22,17 +22,32 @@ const Projects = () => {
           title="Portfolio React"
           description="Portfolio personnel pour présenter mes projets et compétences."
           tech="React, CSS"
-          github="https://github.com/julienfabrice/react-job-board"
+          github="https://github.com/julienfabrice/portfolio-react-julien"
           live="https://cute-faun-069892.netlify.app"
         />
 
-        {/* Nouveau projet TodoApp */}
         <ProjectCard
           title="Todo App"
           description="Application de gestion de tâches avec filtres et compteurs."
           tech="React, CSS, LocalStorage"
-          github="https://github.com/julienfabrice/react-todo-app"  // si tu as un repo GitHub
-          live="/todo"  // lien vers la page Todo dans ton portfolio
+          github="https://github.com/julienfabrice/react-todo-app"
+          live="/todo"
+        />
+
+        <ProjectCard
+          title="Habitat 100K"
+          description="Prototype interactif pour un projet de 100 000 logements sociaux basé sur la technologie de blocs de terre comprimée (BTC-A), avec simulateur et présentation du modèle économique."
+          tech="React, TypeScript, CSS"
+          github="https://github.com/julienfabrice/habitat100k-react"
+          live="https://habitat100k-react.netlify.app"
+        />
+
+        <ProjectCard
+          title="Kobo Dashboard"
+          description="Dashboard de suivi de données terrain connecté à KoboToolbox. Synchronise et centralise les soumissions de formulaires agricoles (projets RENFORT et e-AgriSouk), avec visualisation dynamique par graphiques et tableaux."
+          tech="Node.js, Express, MySQL, Chart.js"
+          github="https://github.com/julienfabrice/kobo-dashboard"
+          live="https://kobo-dashboard-production-bcbd.up.railway.app"
         />
       </div>
     </div>

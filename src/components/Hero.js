@@ -18,10 +18,8 @@ function Hero() {
         </p>
 
         <p>
-          J’ai de solides compétences en développement web, notamment en HTML,
-          CSS, JavaScript et React.js. Je maîtrise aussi l’installation, la
-          configuration et le dépannage des ordinateurs, ainsi que l’assistance
-          aux utilisateurs.
+          J'ai de solides compétences en développement web, notamment en HTML, CSS, JavaScript, React.js et Angular/TypeScript pour le frontend, ainsi qu'en PHP/Laravel et Node.js/Express pour le backend. Je travaille aussi bien avec des bases de données relationnelles comme MySQL et PostgreSQL, et j'utilise Git pour la gestion de versions et le travail collaboratif.
+          Je maîtrise également l'installation, la configuration et le dépannage des ordinateurs, ainsi que l'administration de systèmes et de réseaux, en plus de l'assistance aux utilisateurs.
         </p>
 
         <p>

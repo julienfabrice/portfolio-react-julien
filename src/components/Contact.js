@@ -69,8 +69,8 @@ export default function Contact() {
         <div className="contact-info">
           <h3>Mes coordonnées</h3>
           <p><strong>Nom :</strong> Julien Fabrice Menoa</p>
-          <p><strong>Titre :</strong> Développeur React</p>
-          <p><strong>Telephone :</strong> +237 697733236</p>
+          <p><strong>Titre :</strong> Développeur d’applications</p>
+          <p><strong>Telephone :</strong> +237 697733236 / 676383775</p>
           <p><strong>Email :</strong> <a href="mailto:julien@example.com">menoa.julien@gmail.com</a></p>
           <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/julien-fabrice-menoa-4a1571349" target="_blank" rel="noreferrer">linkedin.com/Julien Fabrice Menoa</a></p>
         </div>
