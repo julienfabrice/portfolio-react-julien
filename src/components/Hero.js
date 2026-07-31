@@ -6,27 +6,33 @@ function Hero() {
     <section className="hero">
       <div className="hero-card">
         {/* GRAND TITRE */}
-        <h1>Je suis développeur React</h1>
+        <h1>Je suis développeur Fullstack & Administrateur Systèmes</h1>
 
         {/* PARAGRAPHES */}
         <p>
-          Je suis développeur d’applications et technicien en maintenance
-          informatique, titulaire d’une licence en informatique. Passionné par
-          les technologies du web et les systèmes informatiques, je conçois des
-          applications web modernes et je réalise également des opérations de
-          maintenance matérielle et logicielle.
+          Développeur fullstack et administrateur systèmes, titulaire d'une
+          licence en informatique. Je conçois et déploie des applications web
+          modernes de bout en bout, de l'interface utilisateur jusqu'à
+          l'infrastructure serveur, et j'assure la maintenance des systèmes
+          et réseaux qui les font tourner.
         </p>
 
         <p>
-          J'ai de solides compétences en développement web, notamment en HTML, CSS, JavaScript, React.js et Angular/TypeScript pour le frontend, ainsi qu'en PHP/Laravel et Node.js/Express pour le backend. Je travaille aussi bien avec des bases de données relationnelles comme MySQL et PostgreSQL, et j'utilise Git pour la gestion de versions et le travail collaboratif.
-          Je maîtrise également l'installation, la configuration et le dépannage des ordinateurs, ainsi que l'administration de systèmes et de réseaux, en plus de l'assistance aux utilisateurs.
+          Je maîtrise React.js, Next.js et TypeScript pour le frontend, ainsi
+          que PHP/Laravel et Node.js/Express pour le backend. Je travaille
+          avec des bases de données relationnelles comme MySQL et PostgreSQL,
+          et je gère le déploiement et l'administration de serveurs VPS
+          (Nginx, PM2, gestion de processus). J'utilise Git au quotidien pour
+          la gestion de versions et le travail en équipe.
         </p>
 
         <p>
-          Aujourd’hui, je suis à la recherche d’opportunités professionnelles
-          (emploi ou missions freelance) me permettant de mettre mes compétences
-          au service de projets concrets, tout en continuant à apprendre et à
-          évoluer dans le domaine de l’informatique.
+          Je mets aussi cette expertise au service de la formation, avec
+          plusieurs années d'expérience dans l'enseignement de l'informatique
+          au secondaire. Aujourd'hui, je suis à la recherche d'opportunités
+          professionnelles (emploi ou missions freelance) me permettant de
+          contribuer à des projets ambitieux, tout en continuant à apprendre
+          et à évoluer.
         </p>
 
         {/* BOUTON BLEU CENTRÉ */}

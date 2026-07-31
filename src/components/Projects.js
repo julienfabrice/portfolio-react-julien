@@ -49,6 +49,14 @@ const Projects = () => {
           github="https://github.com/julienfabrice/kobo-dashboard"
           live="https://kobo-dashboard-production-bcbd.up.railway.app"
         />
+
+        <ProjectCard
+          title="EAJ Finance Dashboard"
+          description="Dashboard de gestion financière pour l'Agence Emploi Jeunes (Côte d'Ivoire), avec suivi des indicateurs et visualisation des données budgétaires."
+          tech="Next.js, TypeScript, Laravel"
+          github="https://github.com/julienfabrice/aej-finance-dashboard"
+          live="https://aej-finance-dashboard.netlify.app"
+        />
       </div>
     </div>
   );
