@@ -57,6 +57,15 @@ const Projects = () => {
           github="https://github.com/julienfabrice/aej-finance-dashboard"
           live="https://aej-finance-dashboard.netlify.app"
         />
+        
+         <ProjectCard
+          title="Survey Solutions Dashboard"
+          description="Dashboard affichant automatiquement les formulaires soumis sur un serveur Survey Solutions, avec colonnes déduites dynamiquement de la structure de chaque questionnaire."
+          tech="FastAPI, React, Vite, MySQL"
+          github="https://github.com/julienfabrice/survey-solutions-dashboard"
+          live="https://cool-praline-48269f.netlify.app"
+        />
+
       </div>
     </div>
   );
